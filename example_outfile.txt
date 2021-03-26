@@ -1,0 +1,63 @@
+{{button|[[Underwood 관련 편지-미국무부 해외공관문서 외 소장 | ←Underwood 관련 편지<br/>미국무부 해외공관문서 외 소장 편지 목록으로 돌아가기]]}}
+
+{{Letter
+|대표명= 언더우드가 시드모어에게 보낸 편지<br/>(1910년 3월 16일)
+|한글명= 언더우드가 시드모어에게 보낸 편지 (1910년 3월 16일)
+|영문명= Horace G. Underwood's Letter To Scidmore, Gorge H. (March 16, 1910)
+|식별자=
+|발신자= [[Underwood, Horace G.(원두우)]]
+|수신자= [[Scidmore, Gorge H.]]
+|작성연도= 1910
+|작성월일= 3월 16일
+|작성공간=
+|수신공간=  -
+|자료소장처=  -
+|번역문출처= -
+|키워드= -
+|이전편지= -
+|다음편지= -
+}}
+
+{{Layout
+|번역문1= {{TagLocation|[[서울]]}}, 한국.
+|번역문2= 1910년 3월 16일.
+|번역문3= 존경하는 {{TagPerson|[[Scidmore, Gorge H.|G. H. 시드모어]]}}<br/>{{TagInstitution|[[미국 총영사관]]}}. <br/>{{TagLocation|[[서울]]}}, 한국.
+|번역문4= 친애하는 {{TagPerson|[[Scidmore, Gorge H.|시드모어]]}} 씨에게:
+|번역문5= 토종 한국 종교 주간지와 관련하여 최근에 {{TagObject|[[신문(新聞)]]}}들이 내보내는 내용들에 관해서, 예외적인 경우가 발생한 그 주간지 기사의 번역 사본을 당신에게 보냅니다.
+|번역문6= 만약 제가 직접 그 주간지를 편집하는 사람이었다면 저는 그러한 기사를 포함시키지 않았을 것이며 적어도 그와 같은 제목을 달지는 않게 했을 것입니다. 신문사들이 제공한 번역들은 당신이 보다시피 매우 과장되어 있습니다. 현재 상황을 보자면 이러한 종류의 주제는 그런 주간지에서는 다루지 않는 것이 좋았습니다.
+|번역문7= 제 생각에는 그 주간지와 저의 관계를 당신이 아는 것도 괜찮을 것 같습니다. 그 주간지는 한국의 {{TagGroup|[[장로교회]]}}의 기관지입니다. 그 주간지는 제가 의장을 맡은 한 위원회의 통제와 조직 아래에서 출간된 것입니다. 그것을 {{TagInstitution|[[우체국]]}}에 등록할 때 저는 제 이름이 언급되는 것을 결코 원하지 않았습니다. 저는 그것이 한국 {{TagGroup|[[장로교회]]}}의 이름으로 등록되기를 간절히 원했습니다. 그러나 언론국에 있는 {{TagPerson|[[아오키]]}} 씨가 그것의 등록은 반드시 개인의 이름이나 그 {{TagObject|[[신문(新聞)]]}}을 발행하는 위원회 의장의 이름으로 되어야 한다고 말했습니다. 저는 그 {{TagObject|[[신문(新聞)]]}}에 어떤 내용이 포함될지에 관하여 결정하는 어떠한 법적 권한도 가지고 있지 않습니다. 그러나 이번에 한국인들이 낸 주관지의 기사를 보고 나서, 저는 앞으로 그 {{TagObject|[[신문(新聞)]]}}에 포함되는 내용에 대한 감독권을 확보해야겠다는 생각을 하였습니다. 왜냐하면 그 {{TagObject|[[신문(新聞)]]}}의 의도는 결코 정치성을 띠는데 있지 않으므로 밖에서도 그렇게 보이는 일이 없어야 하기 때문입니다. 그 신문의 기사는 그저 한국이 현재 상황에 오게 된 이유는 국민이 올바로 처신하지 않았기 때문이라고 말하고 있을 뿐입니다. 그리고 이러한 내용은 {{TagPerson|[[이토 히로부미(伊藤博文)|이토 왕자]]}}가 했던 말을 그저 반복하는 것일 뿐입니다. {{TagPerson|[[이토 히로부미(伊藤博文)|이토 왕자]]}}는 종종 “만약 한국인들이 남자답고, 지적이고, 의롭고, 정직하게 된다면 다시 독립할 수 있을 것이다”라고 주장했습니다. 하지만 여기서 제가 강조하고 싶은 것은 그 신문의 기사가 아니라 제가 그 신문과 가지고 있는 관계의 성격입니다. 또한, 저는 앞으로는 이 {{TagObject|[[신문(新聞)]]}}이 심지어 표면적으로 보기에도 정치적이라는 오해를 받지 않도록 앞으로 {{TagObject|[[신문(新聞)]]}}에 들어갈 내용을 감독하겠다고 당신에게 알리는 바입니다.
+|번역문8= 만약 당신이 이 신문(新聞)에 대해서 추가적인 질문이 있다면 기꺼이 대답해 드리겠습니다.
+|번역문9= 진심을 담아
+|번역문10= {{TagPerson|[[Underwood, Horace G.(원두우)|H. G. 언더우드]]}}
+|번역문11= <u>동봉</u>
+|번역문12= 주제 : 범선의 면허
+|번역문13= {{TagLocation|[[서울]]}}, 한국. <br/>1910년 3월 16일.
+|번역문14= 존경하는 {{TagPerson|[[Scidmore, Gorge H.|G. H. 시드모어]]}}<br/>{{TagInstitution|[[미국 총영사관]]}}.<br/>{{TagLocation|[[서울]]}}, 한국.
+|번역문15= 친애하는 {{TagPerson|[[Scidmore, Gorge H.|시드모어]]}} 씨에게
+|번역문16= 저의 생각에 아마 그러한 조건이라면 우리가 그 배의 소유권을 변경하는 것이 더 나을 것 같습니다. 제가 신뢰하는 조수인 J. K. S. 김 군의 명의로 하면 좋겠습니다. 김 군에게 그렇게 하기 위하여 요구되는 절차들이 무엇인지 친절하게 알려주시기를 바랍니다.
+|번역문17= 진심을 담아
+|번역문18= {{TagPerson|[[Underwood, Horace G.(원두우)|H. G. 언더우드]]}}
+|번역문19= ---------------------------------------------------------------------------------------------------- <br/>1910년 3월 16일 오후 2시 30분 – 그와 면담하였습니다. 그에게 선박 면허의 갱신을 위하여 {{TagConcept|[[세관]]}} 신청에 대한 답변을 기다리라고 하였고, 영사 규정 345호를 읽어주었습니다.<br/>----------------------------------------------------------------------------------------------------
+
+|원문1= {{TagLocation|[[서울|Seoul]]}}, Korea,
+|원문2= March 16, 1910.
+|원문3= {{TagPerson|[[Scidmore, Gorge H.|Hon. G. H. Scidmore]]}},<br/>{{TagInstitution|[[미국 총영사관|American Consulate-General]]}},<br/>{{TagLocation|[[서울|Seoul]]}}, Korea.
+|원문4= My dear Mr. {{TagPerson|[[Scidmore, Gorge H.|Scidmore]]}}:-
+|원문5= In connection with the recent notices in the {{TagObject|[[신문(新聞)|papers]]}} concerning the native Korean religious weekly, I am sending you herewith a copy of the translation of the article to which exception has been taken.
+|원문6= Personally had I been editing the paper I would not have inserted the article, nor would I have allowed it to come out at least with the title attached thereto. The translations that have been given by other papers, as you see, have been very much exaggerated; but the present time is such that topics of this kind had better be omitted from such a paper.
+|원문7= I think possibly it may be well for you to know what my connection with the weekly is. It is the organ of the {{TagGroup|[[장로교회|Presbyterian Church]]}} in Korea, published by an organised company and controlled by a committee of which I chance to be the chairman. In the registering of the paper in the {{TagInstitution|[[우체국|Post Office]]}} I did not want my name to be mentioned at all. I was anxious to have it registered in the name of the Korean {{TagGroup|[[장로교회|Presbyterian Church]]}}. Mr. {{TagPerson|[[아오키|Aoki]]}}, however, of the Bureau of Communication told me that {{TagObject|[[신문(新聞)|it]]}} must be in the name of an individual, and that of the chairman. I have no legal control of what goes into the {{TagObject|[[신문(新聞)|paper]]}}, but having seen this one break made by the Koreans, I shall, I think, assume the oversight of everything that goes in, because the {{TagObject|[[신문(新聞)|paper]]}} as a {{TagObject|[[신문(新聞)|paper]]}} has absolutely no idea of entering into politics of any kind, and it will be well to have everything so scrutinized that even the appearance can be avoided. The article as an article is simply asserting that Korea is in her present position because the people have not in the past done right, and reiterating what {{TagPerson|[[이토 히로부미(伊藤博文)||Prince Ito]]}} has so often asserted that “if they will be manly, intelligent, upright, and honest, they will regain their independence.” However, I did not start to discuss the article, but simply to explain my connection with the {{TagObject|[[신문(新聞)|paper]]}}, and to let you know that I expect to so oversee what goes in in the future that even such an appearance shall not be manifest again.
+|원문8= If there is anything further that you care to know about the {{TagObject|[[신문(新聞)|paper]]}}, etc., I will be only too glad to answer any further questions.
+|원문9= Yours sincerely,
+|원문10= {{TagPerson|[[Underwood, Horace G.(원두우)|H. G. Underwood]]}}
+|원문11= <u>Enclosure.</u>
+|원문12= Subject : Schooner’s       license
+|원문13= {{TagLocation|[[서울|Seoul]]}}, Korea, <br/>March 16, 1910.
+|원문14= {{TagPerson|[[Scidmore, Gorge H.|Hon. G. H. Scidmore]]}},<br/>{{TagInstitution|[[미국 총영사관|American Consulate-General]]}},<br/>{{TagLocation|[[서울|Seoul]]}}, Korea.
+|원문15= My dear Mr. {{TagPerson|[[Scidmore, Gorge H.|Scidmore]]}}:-
+|원문16= I think possibly under the circumstances we had better change the ownership of the boat and have it under the name of my confidential assistant Mr. J. K. S. Kimm. Kindly instruct Mr. Kimm as to what steps are needed to be taken.
+|원문17= Yours sincerely,
+|원문18= {{TagPerson|[[Underwood, Horace G.(원두우)|“H. G. Underwood”]]}}
+|원문19= ----------------------------------------------------------------------------------------------------<br/>“2-30 p.m. Mch 16/10 – Interview with him. Told him to await answer to his application to {{TagConcept|[[세관|customs]]}} for renewal of vessel’s licence. Read to him Par. 345, of the Consular Regulations”<br/>----------------------------------------------------------------------------------------------------
+}}
+
+[[분류:Letter]] [[분류:From Underwood]] [[분류:To Scidmore]] [[분류:1910년]] [[분류:서울]]
