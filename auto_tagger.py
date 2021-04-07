@@ -7,7 +7,7 @@ def excel_to_dic(excel_file_name):
     word_list = pd.DataFrame()
     try:
         word_list = pd.read_excel(excel_file_name + '.xlsx')
-    except FileNotFoundError as e:
+    except FileNotFoundError:
         word_list = pd.read_excel(excel_file_name + '.xls')
     word_to_tag = {}
 
@@ -50,17 +50,14 @@ def tag(word_to_tag, input_file_name):
             word_in_tags = False
             for assigned_tag in assigned_tags:
                 if word in assigned_tag:
-                    print(":: Word found in assigned tags ::")
                     word_in_tags = True
                     break
 
             # replace the whole content if word is not in assigned_tags
             if not word_in_tags:
-                print(":: whole content replacement ::")
                 content = content.replace(word, tag, 1)
             # split, replace, and concatenate if word is in assigned_tags
             else:
-                print(":: split, replace, and concatenate ::")
                 # split the content by assigned_tags
                 split_by_tags = re.split("{{[^}}]*}}", content)
 
@@ -72,11 +69,8 @@ def tag(word_to_tag, input_file_name):
 
                 # concatenate assigned_tags and split_by_tags
                 # split_by_tags has one more element than assigned_tags
-                print(f'tags: {assigned_tags}, split_by_tags: {split_by_tags}')
-                print(f'length of tags: {len(assigned_tags)}, length of split_by_tags: {len(split_by_tags)}')
                 concat = ''
                 for split, assigned_tag in zip(split_by_tags, assigned_tags):
-                    print('concat')
                     concat += split + assigned_tag
                 concat += split_by_tags[-1]
                 content = concat
@@ -84,8 +78,39 @@ def tag(word_to_tag, input_file_name):
         output.write(content)
 
 
+def detag(input_file_name):
+    with open(input_file_name + '.txt', 'r', encoding='UTF8') as input_file, \
+            open(input_file_name.split('.')[0] + '_detagged.txt', 'w', encoding='UTF8') as output:
+        content = input_file.read()
+        assigned_tags = re.findall("{{[^}}]*}}", content)
+        split_by_tags = re.split("{{[^}}]*}}", content)
+
+        # remove tags and get the words only
+        words = []
+        for assigned_tag in assigned_tags:
+            # word != tag
+            if assigned_tag.count('|') == 2:
+                word = assigned_tag.split('|')[-1].split(']')[0]
+                words.append(word)
+                print(assigned_tag, word)
+            # word == tag
+            elif assigned_tag.count('|') == 1:
+                word = assigned_tag.split('[')[-1].split(']')[0]
+                words.append(word)
+                print(assigned_tag, word)
+
+        # concatenate words and split_by_tags
+        concat = ''
+        for split, word in zip(split_by_tags, words):
+            concat += split + word
+        concat += split_by_tags[-1]
+        content = concat
+
+        output.write(content)
+
+
 def open_window():
-    def main():
+    def tagger():
         try:
             word_to_tag = excel_to_dic(entry_excel.get())
             tag(word_to_tag, entry_text.get())
@@ -107,7 +132,7 @@ def open_window():
             button_2.grid(row=1, column=1, **grid_style)
 
             window2.mainloop()
-        except ValueError('excel file style error'):
+        except ValueError:
             window2 = Tk()
             window2.title('Error')
             label_2 = Label(window2, text='엑셀 파일의 형식을 확인하세요.', **style)
@@ -116,8 +141,32 @@ def open_window():
             button_2.grid(row=1, column=1, **grid_style)
 
             window2.mainloop()
-        except Exception as e:
-            print(e)
+        except Exception:
+            pass
+
+    def detagger():
+        try:
+            detag(entry_text.get())
+
+            window2 = Tk()
+            window2.title('Success')
+            label_2 = Label(window2, text='태그 제거가 완료되었습니다.', **style)
+            label_2.grid(row=1, column=0, **grid_style)
+            button_2 = Button(window2, text='닫기', command=window2.destroy)
+            button_2.grid(row=1, column=1, **grid_style)
+
+            window2.mainloop()
+        except FileNotFoundError:
+            window2 = Tk()
+            window2.title('Error')
+            label_2 = Label(window2, text='파일위치 및 파일명을 확인하세요.', **style)
+            label_2.grid(row=1, column=0, **grid_style)
+            button_2 = Button(window2, text='닫기', command=window2.destroy)
+            button_2.grid(row=1, column=1, **grid_style)
+
+            window2.mainloop()
+        except Exception:
+            pass
 
     window = Tk()
     window.title('Auto Tagger v1.0')
@@ -134,8 +183,11 @@ def open_window():
     entry_excel = Entry(window, width=30)
     entry_excel.grid(row=2, column=1, **grid_style)
 
-    button = Button(window, text='Tagging', command=main, **style)
-    button.grid(row=3, column=1, **grid_style)
+    button1 = Button(window, text='Tagging', command=tagger, **style)
+    button1.grid(row=3, column=1, padx=13, pady=5)
+
+    button2 = Button(window, text='Detagging', command=detagger, **style)
+    button2.grid(row=4, column=1, **grid_style)
 
     window.mainloop()
 
