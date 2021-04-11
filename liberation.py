@@ -35,7 +35,11 @@ def excel_to_dic(excel_file_name):
             except:
                 raise ValueError('excel file style error')
         i += 1
-    return word_to_tag
+
+    # sort the dictionary by key
+    sorted_keys = sorted(word_to_tag.keys(), key=len, reverse=True)
+    sorted_dic = {key: word_to_tag[key] for key in sorted_keys}
+    return sorted_dic
 
 
 def tag(word_to_tag, input_file_name):
@@ -92,12 +96,10 @@ def detag(input_file_name):
             if assigned_tag.count('|') == 2:
                 word = assigned_tag.split('|')[-1].split(']')[0]
                 words.append(word)
-                print(assigned_tag, word)
             # word == tag
             elif assigned_tag.count('|') == 1:
                 word = assigned_tag.split('[')[-1].split(']')[0]
                 words.append(word)
-                print(assigned_tag, word)
 
         # concatenate words and split_by_tags
         concat = ''
@@ -169,7 +171,7 @@ def open_window():
             pass
 
     window = Tk()
-    window.title('Auto Tagger v1.0')
+    window.title('해방 v.1.1')
     style = {'font': ('Malgun Gothic', 10)}
     grid_style = {'padx':13, 'pady':13}
 
