@@ -1,6 +1,7 @@
 from tkinter import *
 import pandas as pd
 import re
+import os
 
 
 def excel_to_dic(excel_file_name):
@@ -114,8 +115,10 @@ def detag(input_file_name):
 def open_window():
     def tagger():
         try:
-            word_to_tag = excel_to_dic(entry_excel.get())
-            tag(word_to_tag, entry_text.get())
+            excel_path = os.path.join(entry_dir.get(), entry_excel.get())
+            text_path = os.path.join(entry_dir.get(), entry_text.get())
+            word_to_tag = excel_to_dic(excel_path)
+            tag(word_to_tag, text_path)
 
             window2 = Tk()
             window2.title('Success')
@@ -148,7 +151,8 @@ def open_window():
 
     def detagger():
         try:
-            detag(entry_text.get())
+            text_path = os.path.join(entry_dir.get(), entry_text.get())
+            detag(text_path)
 
             window2 = Tk()
             window2.title('Success')
@@ -175,21 +179,26 @@ def open_window():
     style = {'font': ('Malgun Gothic', 10)}
     grid_style = {'padx':13, 'pady':13}
 
+    label1 = Label(window, text='폴더의 경로 입력:', **style)
+    label1.grid(row=1, column=0, **grid_style)
+    entry_dir = Entry(window, width=30)
+    entry_dir.grid(row=1, column=1, **grid_style)
+
     label2 = Label(window, text='텍스트 파일명 입력:', **style)
-    label2.grid(row=1, column=0, **grid_style)
+    label2.grid(row=2, column=0, **grid_style)
     entry_text = Entry(window, width=30)
-    entry_text.grid(row=1, column=1, **grid_style)
+    entry_text.grid(row=2, column=1, **grid_style)
 
     label3 = Label(window, text='리스트 엑셀 파일명 입력:', **style)
-    label3.grid(row=2, column=0, **grid_style)
+    label3.grid(row=3, column=0, **grid_style)
     entry_excel = Entry(window, width=30)
-    entry_excel.grid(row=2, column=1, **grid_style)
+    entry_excel.grid(row=3, column=1, **grid_style)
 
     button1 = Button(window, text='Tagging', command=tagger, **style)
-    button1.grid(row=3, column=1, padx=13, pady=5)
+    button1.grid(row=4, column=1, padx=13, pady=5)
 
     button2 = Button(window, text='Detagging', command=detagger, **style)
-    button2.grid(row=4, column=1, **grid_style)
+    button2.grid(row=5, column=1, **grid_style)
 
     window.mainloop()
 
